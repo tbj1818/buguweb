@@ -51,7 +51,7 @@
                     </h4>
                     <section class="pcqrcode">
                         <p class="appload" style="margin-top:100px">
-                            <img src="../assets/images/qcode.jpg" />
+                            <img src="../assets/images/qrcodeweb.jpg" />
                         </p>
                         <p>
                             <a href="javascript:;" class="atcontact ">扫码下载</a><span
@@ -65,10 +65,12 @@
             </div>
         </section>
         <section class="col-md-12 appBtn">
-            <p style="margin-left:2.6%">ios下载安装提示<span class="glyphicon glyphicon-chevron-right"></span></p>
-            <button type="button" class="btn btn-primary">ios下载</button>
-            <button type="button" class="btn btn-android">Android下载</button>
+            <p style="margin-left:2.6%"  @click="opentip()">ios下载安装提示<span class="glyphicon glyphicon-chevron-right"></span></p>
+            <button type="button" class="btn btn-primary"><a href="itms-services://?action=download-manifest&url=https://bb.eqka.com/app/ios/manifest.plist" target="_blank">ios下载</a></button>
+            <button type="button" class="btn btn-android"><a href="http://imgcdn.bb.eqka.com/bugu-pro.apk">Android下载</a></button>
         </section>
+
+        <div class="opentip"><div class="clseico" @click="closebtn()"><img src="../assets/images/icon-guanbi@2x.png" alt="closebtn"></div><div class="bluttext">因ios系统限制，安装后首次打开会提示“不受信任的企业和开发者”，为了能正常使用，请按下面步骤设置信任。</div><h1 style="margin:0 auto">下载安装后，在 ＞＞通用＞＞设备管理中找到“Shaa...”＞＞点击信任 “ Shaa... ”</h1><img src="../assets/images/img-xinren@2x.png" alt="iphone提示"><h1 style="text-align:center">布谷公众号：布谷精灵</h1><a href="itms-services://?action=download-manifest&amp;url=https://bb.eqka.com/app/ios/manifest.plist" target="_blank" class="downloadBtn">下载安装</a></div>
     </section>
 </template>
 <script>
@@ -76,11 +78,35 @@ $(function(){
       $('body,html').animate({ scrollTop: 0 }, 100);
         return false;
 })
+export default {
+    name: 'home',
+    data() {
+      return {
+      }
+    },
+    methods: {
+            opentip:function(){
+                $('.opentip').show();
+            },
+            closebtn:function(){
+                 $('.opentip').hide();
+            }
+    },
+    mounted() {
+      $('#navbar li.load').click(function () {
+        window.location.reload();
+      })
+    },
+    components: {
+      // HelloWorld
+    }
+  }
 </script>
 <style>
 .appBtn{display:none}
     @media (max-width:768px) {
         .appBtn{display:block}
+        .animatedParent h4.media-heading{font-size:42px; text-align:left}
         .nav_bg,
         .pcqrcode,
         .contactUsBg {
@@ -112,7 +138,7 @@ $(function(){
         }
 
         .blockMarT {
-            margin-top: 60px;
+               margin: 50px auto 0 !important;padding:0;height:auto
         }
     }
 </style>

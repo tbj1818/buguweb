@@ -1,6 +1,6 @@
 <template>
       <!-- 联系我们 -->
-    <section class="blockMarT">
+    <section class="blockMarT" style="padding-top:0">
       <section class="contactUsBg">
         <section class="container">
           <div class="col-md-3">

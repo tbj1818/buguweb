@@ -52,7 +52,7 @@ s .dropdown-menu>li>a {
 }
 
 .scrolltopbg {
-    background: rgba(59, 70, 130, .7);
+    background: rgba(59, 70, 130, .9);
     border-radius: 25px;
 }
 
@@ -107,7 +107,7 @@ s .dropdown-menu>li>a {
 
 .nav-pills>li.active>a {
     background: none;
-    border: #fff solid 1px;
+    border: 0;
     border-radius: 25px;
     padding: 8px 25px
 }
@@ -265,6 +265,7 @@ li {
 
 .blockMarT {
     margin:250px auto 0;
+    height: 600px; padding: 100px 0;
 }
 .blockMarTop {
     margin:100px auto 0;
@@ -331,7 +332,6 @@ li {
     padding: 10px 25px 0 0;
     margin: 10px auto;
     color: #A1EFB7;
-    font-weight: bold;
     font-size: 1.8rem;
     display: inline-block;
 }
@@ -854,14 +854,14 @@ li {
 
 /*打造*/
 .animatedParent h4.media-heading {
-    font-size: 42px;
+    font-size:58px;
+    line-height: 70px;
     margin-bottom: 30px
 }
 
 .animatedParent p.text {
     font-size: 14px;
     line-height: 30px;opacity: .7;
-    margin-bottom: 30px
 }
 
 .lineW {
@@ -1022,6 +1022,9 @@ li {
     font-size: 14px
 }
 
+
+/*团队*/
+.peoplethree .pricing-box-green {margin-right: 40px}
 .peopletext {
     width: 100%;
     height: 100%;
@@ -1065,17 +1068,27 @@ li {
 /*新闻报道*/
 .newspic {
     width: 100%;
+    height: 280px;
     border: rgb(49, 44, 141) 1px solid;
     position: relative;
     border-radius:4px;
+
+}
+
+.newstitle {
+    width: 100%;
+    padding: 20px 30px; margin: 20px 0;
+    background: #F2F2F5;
+    color: #999999; font-size: 14px;
 }
 
 .newspic a {
     color: #fff
 }
-
+.modal{z-index: 9999999999;}
 .newspic img {
     width: 100%;
+    height: 100%;
     border-radius:4px;
 }
 
@@ -1121,6 +1134,8 @@ li {
 
 .appload {
     width: 130px;
+        background: #FFF;
+        padding: 5px;
 }
 
 .appload img {
@@ -1158,9 +1173,9 @@ li {
 .weixin-logo-icon {
     background-repeat: no-repeat;
     background-image: url("../images/icon-wx@2x.png");
-    background-size: 42px 42px;
-    height: 42px;
-    width: 42px;
+    background-size: 26px 26px;
+    height:26px;
+    width:26px;
     cursor: pointer;
     margin: 0;
     -webkit-transition: all .5s ease-in;
@@ -1172,9 +1187,9 @@ li {
 .weibo-logo-icon {
     background-repeat: no-repeat;
     background-image: url("../images/icon-wb@2x.png");
-    background-size: 42px 42px;
-    height: 42px;
-    width: 42px;
+    background-size: 26px 26px;
+    height:26px;
+    width:26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1187,9 +1202,9 @@ li {
 .qq-logo-icon {
     background-repeat: no-repeat;
     background-image: url("../images/icon-qq@2x.png");
-    background-size: 42px 42px;
-    height: 42px;
-    width: 42px;
+    background-size: 26px 26px;
+     height:26px;
+     width:26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1202,9 +1217,9 @@ li {
 .face-logo-icon {
     background-repeat: no-repeat;
     background-image: url("../images/icon-fb@2x.png");
-    background-size: 42px 42px;
-    height: 42px;
-    width: 42px;
+    background-size: 26px 26px;
+     height:26px;
+     width:26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1217,9 +1232,9 @@ li {
 .tw-logo-icon {
     background-repeat: no-repeat;
     background-image: url("../images/icon-t@2x.png");
-    background-size: 42px 42px;
-    height: 42px;
-    width: 42px;
+    background-size: 26px 26px;
+     height:26px;
+     width:26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1232,9 +1247,9 @@ li {
 .yt-logo-icon {
     background-repeat: no-repeat;
     background-image: url("../images/icon-youtube@2x.png");
-    background-size: 42px 42px;
-    height: 42px;
-    width: 42px;
+    background-size: 26px 26px;
+     height:26px;
+     width:26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1247,9 +1262,9 @@ li {
 .in-logo-icon {
     background-repeat: no-repeat;
     background-image: url("../images/icon-in@2x.png");
-    background-size: 42px 42px;
-    height: 42px;
-    width: 42px;
+    background-size: 26px 26px;
+     height:26px;
+     width:26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1264,7 +1279,7 @@ li {
     background-repeat: no-repeat;
     border: #fff solid 2px;
     border-radius: 10px;
-    background-image: url("../images/qcode.jpg");
+    background:#FFF url("../images/qrcodeweb.jpg");
     background-size: 160px 160px;
     height: 160px;
     width: 160px
@@ -1332,7 +1347,7 @@ li {
     width: 100%;
     margin: 0 auto 30px
 }
-
+.appBtn a{color:#FFF}
 .appBtn .btn {
     width: 45%;
     padding: 15px 0;
@@ -1356,28 +1371,331 @@ li {
 
 
 /*new*/
-.newscontent{width: 100%; background: #FFF; margin-bottom: -200px}
+.newscontent{width: 100%; background: #FFF;
+}
 .newscontent img{width: 100%;}
 
 .newscontent .cont {
     width:80%; margin:20px auto;padding: 30px 0;
     background: #FFF
 }
-.newscontent h1{width: 100%; text-align: center; color: #000}
-.newscontent h6{width: 100%; text-align: center; line-height: 40px; color: #999}
-.newscontent .newstext {color: #000;
+.newscontent h1{width: 100%; text-align: left; color: #000}
+.newscontent h6{width: 100%; text-align: left; line-height: 40px; color: #999}
+.newscontent .newstext {color: #000; line-height: 32px;
     width: 100%; text-align: left
 }
 
+.newsgzhh {
+    width: 100%;
+    height: 120px;padding: 20px; margin-top: 50px;
+    background: #F2F2F5
+}
+.newsgzhh  img{width:70px; float: left; margin-right: 20px}
+.newsgzhh h1 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.newsgzhh  p{font-size: 14px;}
 
 
-/* 
-.timeLine ul li:nth-child(2n) {
-   position: absolute;
-    bottom: 100px;
-    background:url(../images/img-quan-def.png) no-repeat center 0;
-     transform: rotateX(180deg);
-} */
+.opentip {
+    width: 40%;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin: 0 0 0 -20%;
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.opentip h1 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    font-weight: bold
+}
+
+.bluttext {
+    width: 100%;
+    background: #5856D0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.opentip img {
+    width: 100%;
+}
+
+.downloadBtn {
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff !important;
+    text-align: center;
+    background: rgba(88, 86, 208, 1) !important;
+    border-radius: 30px;
+    border: 0;
+    display: block;
+    margin: 10px auto 0
+}
+
+.clseico {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 30px;
+}
+
+.clseico img {
+    width: 100%;
+}
+
+/* 动画 */
+@-webkit-keyframes Updown {
+    0% {
+        -webkit-transform: translateZ(0)
+    }
+
+    50% {
+        -webkit-transform: translate3d(0, 8px, 0)
+    }
+
+    to {
+        -webkit-transform: translateZ(0)
+    }
+}
+
+@keyframes Updown {
+    0% {
+        transform: translateZ(0)
+    }
+
+    50% {
+        transform: translate3d(0, 8px, 0)
+    }
+
+    to {
+        transform: translateZ(0)
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 30px, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0)
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}
+
+@media screen and (max-width:968px) {
+    .opentip {
+        width: 90%;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin: 0 0 0 -45%;
+        display: none;
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .picLeft {
+        width: 70%;
+        margin: 50px auto 0;
+        float: none;
+        text-align: center
+    }
+
+    .blogo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        float: none
+    }
+
+    .blogo img {
+        width: 12%
+    }
+
+    .logoText {
+        font-size: 18px
+    }
+
+    .bounceInUp {
+        text-align: center
+    }
+
+    #section0 .btns {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        float: none
+    }
+
+    #section0 .apple,
+    #section0 .android {
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        border: #fff solid 1px;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        margin: 10px 0
+    }
+
+    #section0 .content {
+        width: 110%;
+        position: static;
+        margin: 0 auto;
+        text-align: right;
+        float: right;
+        margin-top: 80px
+    }
+
+    #section0 .content img {
+        width: 80%
+    }
+
+    .logo {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .logo img {
+        width: 55%;
+    }
+
+    .threeWk {
+        width: 60%;
+        margin: 30px auto;
+        display: inline-block
+    }
+
+    .threepf {
+        width: 80%;
+        text-align: center;
+        margin: 20px auto;
+        float: none
+    }
+
+    .footter {
+        position: static
+    }
+
+    .bounceInUp p {
+        font-size: 14px
+    }
+
+    .producti {
+        min-height: 320px;
+        background-size: contain;
+        background-position-y: 125px
+    }
+
+    .producti h3 {
+        font-size: 28px;
+        height: 40px;
+        line-height: 40px
+    }
+
+    .producti h6 {
+        font-size: 18px
+    }
+
+    .productRight {
+        width: 90%;
+        position: static;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .productLeft {
+        width: 90%;
+        position: static;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .productLeft img {
+        width: 90%
+    }
+
+    .threenr {
+        margin: 0 auto
+    }
+
+    .gzhqcode {
+        width: 80%;
+        padding: 50px 50px 0;
+        margin: 0 auto;
+        background: #fff;
+        text-align: center;
+        box-sizing: border-box;
+        float: none
+    }
+
+    .gzhqcode img {
+        width: 50%;
+    }
+
+    .gzhqcode h3 {
+        font-size: 16px;
+        color: #656565
+    }
+
+    .footter {
+        width: 100%;
+        text-align: center;
+        color: #656565;
+        font-size: 14px;
+        line-height: 60px;
+    }
+
+    .section {
+        overflow: hidden;
+    }
+}
+
+@media screen and(max-width:1230px) {
+    #section0 .content {
+        width: 45%
+    }
+
+    .picLeft {
+        width: 50%;
+        margin: 30px 0 0 0
+    }
+}
 
 /* 动画 */
 /* 

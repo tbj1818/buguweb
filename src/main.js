@@ -9,6 +9,7 @@ import './assets/js/bootstrap.min'
 import './assets/css/demo.css'
 import './assets/js/public'
 import './assets/js/css3-animate-it'
+import './assets/js/bootstrap.min'
 
 import $ from 'jquery'
 
