@@ -2,10 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import Vant from 'vant';
-import 'vant/lib/index.css';
 
-Vue.use(Vant);
+import './assets/css/bootstrap.min.css'
+import './assets/css/animations.css'
+import './assets/js/bootstrap.min'
+import './assets/css/demo.css'
+import './assets/js/public'
+import './assets/js/css3-animate-it'
+
+import $ from 'jquery'
 
 Vue.config.productionTip = false
 

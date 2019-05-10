@@ -1,15 +1,16 @@
 {
-  "name": "my-app",
+  "name": "buguweb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "node server.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vant": "^1.6.17",
+    "jquery": "^2.0.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3"
   },
