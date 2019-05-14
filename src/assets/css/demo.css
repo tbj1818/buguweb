@@ -544,6 +544,7 @@ li {
     opacity: .5;
     font-size: 14px;
     line-height: 30px;
+    word-wrap:break-word;
     color: #FFF
 }
 
@@ -854,9 +855,11 @@ li {
 }
 
 .animatedParent p.text {
+    width: 100%;
     font-size: 14px;
     line-height: 30px;
     opacity: .7;
+    word-wrap:break-word
 }
 
 .lineW {
@@ -972,6 +975,7 @@ li {
 }
 
 .timeLine ul li .bottext {
+    width: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1008,6 +1012,7 @@ li {
 }
 
 .timeLine2 ul li .bottext {
+    width:100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -1049,6 +1054,7 @@ li {
 
 .peopletext p.textgray {
     width: 90%;
+    word-wrap:break-word;
     opacity: .5;
     margin: 10px auto;
     text-align: left;
@@ -1093,6 +1099,7 @@ li {
 
 .peopletext2 p.textgray {
     width: 90%;
+    word-wrap:break-word;
     opacity: .5;
     margin: 10px auto;
     text-align: left;
@@ -1205,7 +1212,8 @@ li {
 }
 
 .textleft {
-    text-align: left
+    text-align: left;
+    word-wrap:break-word
 }
 
 .blogo img {
@@ -1897,6 +1905,8 @@ li {
     .glyphicon {
         color: #FFF
     }
+    /* 手机版下中英文切换显示 */
+    .dropdown-menu{display: inline-block}
 
     .hh1 {
         font-size: 18px !important;

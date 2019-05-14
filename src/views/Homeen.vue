@@ -8,19 +8,19 @@
         <div class="nav_bg dropdown">
           <!-- nav 导航 -->
           <ul class="nav nav-pills dropdown-menu" id="navbar" aria-expanded="true">
-            <li role="presentation" class="active load"><a id="a00" href="javascript:;">首页</a></li>
-            <li role="presentation" class="load"><a id="a01" href="javascript:;">关于布谷</a></li>
-            <li role="presentation" class="load"><a id="a02" href="javascript:;">生态介绍</a></li>
-            <li role="presentation" class="load"><a id="a03" href="javascript:;">发展路线</a></li>
-            <li role="presentation" class="load"><a id="a04" href="javascript:;">团队</a></li>
-            <li role="presentation" class="load"><a id="a05" href="javascript:;">新闻</a></li>
+            <li role="presentation" class="active load"><a id="a00" href="javascript:;">Home</a></li>
+            <li role="presentation" class="load"><a id="a01" href="javascript:;">About Bugu</a></li>
+            <li role="presentation" class="load"><a id="a02" href="javascript:;">Ecological introduction</a></li>
+            <li role="presentation" class="load"><a id="a03" href="javascript:;">Development route</a></li>
+            <li role="presentation" class="load"><a id="a04" href="javascript:;">Team</a></li>
+            <li role="presentation" class="load"><a id="a05" href="javascript:;">News</a></li>
             <li role="presentation">
-              <router-link to="/app">APP下载</router-link>
+              <router-link to="/app">APP download</router-link>
             </li>
             <li role="presentation" class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                 aria-expanded="false">
-                中文简体 <span class="caret"></span>
+                EN <span class="caret"></span>
               </a>
               <ul class="dropdown-menu bluebg">
                 <li><a href="/">中文简体</a></li>
@@ -39,17 +39,17 @@
           <div class="col-md-6">
             <h4 class="media-heading a00 hh1">
               <div class="lineW"></div>
-              打造开放、共享、<br>
-              共生、共创、共赢<br>
-              游戏新生态
+              Create open, shared,<br>
+              Symbiotic, co-created, and win-win<br>
+              New game ecology
             </h4>
             <p class="text">
-              专注数字世界的娱乐与投资平台
+              Entertainment and investment platform focusing on the digital world
             </p>
 
             <p class="pcenter">
               <a href="/buguwhitepaper.pdf" style="cursor: pointer;"
-                class="atcontact ">下载白皮书</a><span class="glyphicon glyphicon-arrow-down"></span>
+                class="atcontact ">Download the White Paper</a><span class="glyphicon glyphicon-arrow-down"></span>
             </p>
           </div>
           <div class="col-md-6">
@@ -66,36 +66,33 @@
                 <span class="badgepic"><img class="ypic" src="../assets/images/icon-one-def@2x.png">
                   <img class="wpic" src="../assets/images/icon-one-sel.png" />
                 </span>
-                去中心化数字交易平台
+                Decentralized digital trading platform
               </li>
               <li>
                 <span class="badgepic"><img class="ypic" src="../assets/images/icon-two-def@2x.png">
                   <img class="wpic" src="../assets/images/icon-two-sel.png" />
                 </span>
-                游戏虚拟资产确权
+                Game virtual asset affirmation
               </li>
               <li>
                 <span class="badgepic"><img class="ypic" src="../assets/images/icon-three-def@2x.png"><img class="wpic"
                     src="../assets/images/icon-three-sel.png" /></span>
-
-                大数据分发平台
+                Big data distribution platform
               </li>
               <li>
                 <span class="badgepic"><img class="ypic" src="../assets/images/icon-four-def@2x.png"><img class="wpic"
                     src="../assets/images/icon-four-sel.png" /></span>
-
-                IP共创、孵化
+                IP co-creation and incubation
               </li>
             </ul>
           </div>
           <div class="col-md-6 animated bounceInRight">
 
             <h4 class="media-heading  animated bounceInDown">
-              <div class="lineR"></div>关于布谷
+              <div class="lineR"></div>About Bugu
             </h4>
             <p class="text">
-              布谷生态系统是一个以游戏开发者提供游戏，社区节点审核分发，玩家体验推广为主要逻辑，针对中小型发行商、中小型CP、所有游戏玩家、IP
-              生产者、渠道商、合作者等生态参与者共同打造的一个生态系统。布谷以用户体验为中心，以生态可持续发展为目标，让用户、开发商、发行商等生态参与者都能够根据其对生态做出贡献而得到奖励。布谷旨在构建一个开放、共享、共生、共创的游戏行业生态。
+              Bugu Ecosystem is an ecosystem created for small and medium-sized publishers, small and medium-sized CP, all game players, IP producers, distributors, partners and other ecological participants, with main logic that game developers provide games, community node reviews and distributes, and player experience and promote. Bugu takes user experience as the core and ecological sustainable development as target, so that users, developers, publishers and other ecological participants can all be rewarded for their contribution to the ecology. Bugu aims to build an open, shared, symbiotic and co-created game industry ecosystem.
             </p>
           </div>
         </div>
@@ -105,31 +102,30 @@
         <div class="animatedParent">
           <div class="textstart animated bounceInDown a02">
             <div class="lineR"></div>
-            <h4 class="media-heading ">生态介绍</h4>
+            <h4 class="media-heading ">Introduction of ecology</h4>
           </div>
           <section class="shtjiaoshao animated bounceInLeft">
             <div class="row blockMarTop">
               <div class="col-lg-4">
-                <img src="../assets/images/icon-canyu-one.png" alt="生态参与者" title="生态参与者">
-                <h3>生态参与者</h3>
+                <img src="../assets/images/icon-canyu-one.png" alt="Ecological participants" title="Ecological participants">
+                <h3>Ecological participants</h3>
                 <div class="lineB"></div>
-                <p class="text">布谷生态系统中涉及到了诸多参与者，他们都是布谷成功运行的关键角色。在这个以区块链为底层技术的去中心化技术环境下，每个参与者都可以通过贡献价值来参与到布谷生态的建设中。</p>
+                <p class="text">There are many participants involved in Bugu Ecosystem, and they are all key players in the successful operation of Bugu. In this decentralized technology environment with blockchain as the underlying technology, each participant can participate in the construction of Bugu Ecology by contributing values.</p>
 
               </div>
               <div class="col-lg-4">
-                <img src="../assets/images/icon-jiagou-two.png" alt="生态架构与逻辑" title="生态架构与逻辑">
-                <h3>生态架构与逻辑</h3>
+                <img src="../assets/images/icon-jiagou-two.png" alt="Ecological architecture and logic" title="Ecological architecture and logic">
+                <h3>Ecological architecture and logic</h3>
                 <div class="lineR"></div>
                 <p class="text">
-                  布谷生态以区域子公司、创业孵化器、创投基金为基石，生态内的核心平台包括：布谷社区、虚拟币结算中心、大数据分发平台、布谷游戏、推广者联盟、开发者联盟、IP孵化中心等，在此基础上开展了一系列的孵化业务。
+                Bugu Ecology is based on regional subsidiaries, business incubators and venture capital funds. The core platforms in the ecosystem include: Bugu Community, Virtual Currency Settlement Center, Big Data Distribution Platform, Bugu Games, Promoter Alliance, Developer Alliance, and IP Incubation Center, etc. On this basis, a series of incubation businesses are carried out.
                 </p>
               </div>
               <div class="col-lg-4">
                 <img src="../assets/images/icon-zhili-three.png" alt="生态治理架构" title="生态治理架构">
-                <h3>生态治理架构</h3>
+                <h3>Ecological governance architecture</h3>
                 <div class="lineG"></div>
-                <p class="text">布谷生态基金会提供社区的初始启动资金，进行布谷生态的建设，对平台的开源、生 态建设审议等进行管理；同时致力于项目本身的财务、团队建设、对外关系等，使得项目更好的运行。</p>
-
+                <p class="text">Bugu Ecological Foundation provides the initial start-up funds for the community, conducts the construction of Bugu Ecology, and manages the source opening and ecological construction of the platform; at the same time, it is committed to the project's finance, team building, and external relations, so that the project can run better. </p>
               </div>
             </div>
           </section>
@@ -138,7 +134,7 @@
       <section class="container blockMarT animatedParent" style="padding:50px 0">
         <div class="textstart animated bounceInDown a03">
           <div class="lineG" style="margin:0 auto 30px;"></div>
-          <h4 class="media-heading ">发展路线</h4>
+          <h4 class="media-heading ">Development route</h4>
         </div>
         <div class="linepic"><img src="../assets/images/linepic.png" alt="line" />
           <div class="timeLine animated bounceInDown">
@@ -146,25 +142,25 @@
               <li>
                 <section class="bottext">
                   <h1>2018-Q2</h1>
-                  <p class="text">Bugu开始策划并立项</p>
+                  <p class="text">Began planning and establish Bugu project</p>
                 </section>
               </li>
               <li>
                 <section class="bottext">
                   <h1>2018-Q4</h1>
-                  <p class="text">游戏开发者平台发布</p>
+                  <p class="text">Released the game developer platform</p>
                 </section>
               </li>
               <li>
                 <section class="bottext">
                   <h1>2019-Q2</h1>
-                  <p class="text">获得两家知名投资机构战略投资</p>
+                  <p class="text">Acquired strategic investment from two well-known investment institutions</p>
                 </section>
               </li>
               <li>
                 <section class="bottext">
                   <h1>2019-Q4</h1>
-                  <p class="text">第三方游戏开发者平台发布</p>
+                  <p class="text">Released third-party game developer platform</p>
                 </section>
               </li>
             </ul>
@@ -174,25 +170,25 @@
               <li>
                 <section class="bottext">
                   <h1>2018-Q3</h1>
-                  <p class="text">布谷APP 1.0.0版本发布</p>
+                  <p class="text">ReleasedBuguAPP1.0.0</p>
                 </section>
               </li>
               <li>
                 <section class="bottext">
                   <h1>2019-Q1</h1>
-                  <p class="text">与皮皮玩达成战略合作</p>
+                  <p class="text">Achieved strategic cooperation with Pipiwan</p>
                 </section>
               </li>
               <li>
                 <section class="bottext">
                   <h1>2019-Q3</h1>
-                  <p class="text">去中心化游戏分发平台发布</p>
+                  <p class="text">Released the decentralized game distribution platform</p>
                 </section>
               </li>
               <li>
                 <section class="bottext">
                   <h1>2020</h1>
-                  <p class="text">主链+侧链机制试运行</p>
+                  <p class="text">Test run of the main chain + side chain mechanism</p>
                 </section>
               </li>
             </ul>
@@ -220,15 +216,14 @@
                   <h3><img src="../assets/images/img-rob@2x.png" /></h3>
                   <h6>Rob Wilson</h6>
                   <img src="../assets/images/peopleline.png" />
-                  <h2>创始人 首席执行官</h2>
-                  <p class="price textgray">芝加哥大学应用数学及金融学硕士，金融工程师， 拥有多...</p>
+                  <h2>Founder,CEO</h2>
+                  <p class="price textgray">Master of Applied Mathematics and Finance...</p>
                 </div>
                 <!--end pricing-top -->
                 <div class="peopletext">
                   <h6>Rob Wilson</h6>
-                  <h2>创始人 首席执行官</h2>
-                  <p class="price textgray">芝加哥大学应用数学及金融学硕士，金融工程师， 拥有多年金融科技、IT 开发和产品管理、网络工程和信息安全建设等领域经验和成果。Rob
-                    Wilson与2011年开始对云计算环境中的加密协议、 区块链及加密货币的相关技术，进行深入研究。</p>
+                  <h2>Founder,CEO</h2>
+                  <p class="price textgray">Master of Applied Mathematics and Finance, University of Chicago; Financial Engineer; has many years of experience and achievements in the fields of financial technology, IT development and product management, network engineering and information security construction. In 2011, Rob Wilson began an in-depth study on technologies related to encryption protocols, blockchains, and cryptocurrencies in cloud computing environments.</p>
                 </div>
               </div>
               <!--end pricing-box -->
@@ -243,16 +238,15 @@
                   <h3><img src="../assets/images/img-kevin@2x.png" /></h3>
                   <h6>Kevin  Wu</h6>
                   <img src="../assets/images/peopleline.png" />
-                  <h2>联合创始人 首席运营官</h2>
-                  <p class="price textgray">浙江大学法学学士，游戏领域连续创业者，比特币早期投...</p>
+                  <h2>Co-founder,COO</h2>
+                  <p class="price textgray">Bachelor of Laws, Zhejiang University; serial ...</p>
                 </div>
                 <!--end pricing-top -->
                 <div class="peopletext">
                   <h6>Kevin  Wu</h6>
-                  <h2>联合创始人 首席运营官</h2>
+                  <h2>Co-founder,COO</h2>
                   <p class="price textgray">
-                    浙江大学法学学士，游戏领域连续创业者，比特币早期投资者，在区块链咨询和项目孵化方面有着丰富的经验，并专注于区块链技术与游戏融合方面的研究。2012年起开始专注于始全球区项目块战略投资。
-                  </p>
+                   Bachelor of Laws, Zhejiang University; serial entrepreneur in the field of games, early investor in Bitcoin; has extensive experience in blockchain consulting and project incubation; focuses on the study of blockchain technology and game integration; has been focusing on strategic investment in global block projects since 2012.</p>
                 </div>
               </div>
               <!--end pricing-box -->
@@ -267,16 +261,15 @@
                   <h3><img src="../assets/images/img-andy@2x.png" /></h3>
                   <h6>Andy  Du</h6>
                   <img src="../assets/images/peopleline.png" />
-                  <h2>市场营销官</h2>
-                  <p class="price textgray">西北大学哲学硕士，多年互联网产品营销推广经验，有...</p>
+                  <h2>Marketingofficer</h2>
+                  <p class="price textgray">Master of Philosophy, Northwestern University...</p>
                 </div>
                 <!--end pricing-top -->
                 <div class="peopletext">
                   <h6>Andy  Du</h6>
-                  <h2>市场营销官</h2>
+                  <h2>Marketing officer</h2>
                   <p class="price textgray">
-                    西北大学哲学硕士，资深媒体从业者，在品牌营销和市场推广方面有丰富的经验。曾任知名区块链基金合伙人，专注于对区块链技术和加密经济的研究，并投资过多个顶级区块链项目。
-                    2014年进入区块链行业，一直致力于项目孵化、投资并购以及市场推广等相关工作。
+                    Master of Philosophy, Northwestern University; senior media practitioner, has extensive experience in brand marketing and market promotion. Formerly a partner of a well-known blockchain fund, focuses on the study of blockchain technology and encryption economy, has invested in several top blockchain projects. Entered the blockchain industry in 2014 and has been working on project incubation, investment mergers and acquisitions, and market promotion.
                   </p>
                 </div>
               </div>
@@ -535,9 +528,56 @@
 
     },
     mounted() {
-      // $('#navbar li.load').click(function () {
-      //   window.location.reload();
-      // })
+       // 锚点平滑滚动
+    $('#a01, #a001').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({
+            scrollTop: $('.a01').offset().top + -300 + "px"
+        }, 800);
+        return false;
+    });
+    $('#a02, #a002').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({
+            scrollTop: $('.a02').offset().top + -110 + "px"
+        }, 800);
+        return false;
+    });
+    $('#a03, #a003').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({
+            scrollTop: $('.a03').offset().top + -110 + "px"
+        }, 800);
+        return false;
+    });
+    $('#a04, #a004').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({
+            scrollTop: $('.a04').offset().top + -110 + "px"
+        }, 800);
+        return false;
+    });
+    $('#a05, #a005').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({
+            scrollTop: $('.a05').offset().top + -110 + "px"
+        }, 800);
+        return false;
+    });
+    $('#a00, #a000').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({
+            scrollTop: $('.a00').offset().top + -250 + "px"
+        }, 800);
+        return false;
+    });
+       //当点击跳转链接后，回到页面顶部位置
+        $(".w-button-backToTop").click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
     },
     components: {
       // HelloWorld
@@ -545,6 +585,8 @@
   }
 </script>
 <style>
+.peopletext p.textgray{line-height:24px; margin-top:0}
+.fourlist{width:90%}
   .home {
     width: 90%;
     margin: 0 auto;

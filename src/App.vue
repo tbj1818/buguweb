@@ -2,12 +2,14 @@
   <div id="app">
     <!-- <Header></Header> -->
     <router-view></router-view>
-    <Footer></Footer>
+    <Footer v-if="!enfooter"></Footer>
+    <Footeren v-else></Footeren>
   </div>
 </template>
 <script>
   // import Header from './components/head.vue'
   import Footer from './components/footer.vue'
+  import Footeren from './components/footeren.vue'
   export default {
     name: 'home',
     provide() {
@@ -18,6 +20,7 @@
     data() {
       return {
         visible: false,
+        enfooter:false,
         isRouterAlive: true,
       }
     },
@@ -37,12 +40,16 @@
         if (to.path == "/") { //跳转到哪个页面
           location.reload()
         }
+        if (to.path == "/en") { //跳转到哪个页面
+          this.enfooter=true;
+        }
       },
     },
     mounted: function () {},
     components: {
       // Header,
-      Footer
+      Footer,
+      Footeren
     }
   }
 </script>
