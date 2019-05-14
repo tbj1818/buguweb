@@ -37,42 +37,42 @@
               <div class="footer-weixin">
                 <section class="hicon">
                   <a href="https://t.me/Bugu_oneCN" target="_blank">
-                    <figure class="qq-logo-icon"></figure>
+                    <figure class="qq-logo-icon"><img src="../assets/images/icon-telegram-sel@2x.png" /></figure>
                   </a>
                 </section>
               </div>
               <div class="footer-weixin">
                 <section class="hicon">
                   <a href="https://www.facebook.com/buguone" target="_blank">
-                    <figure class="face-logo-icon"></figure>
+                   <figure class="qq-logo-icon"><img src="../assets/images/icon-fb-sel@2x.png" /></figure>
                   </a>
                 </section>
               </div>
               <div class="footer-weixin">
                 <section class="hicon">
                   <a href="https://twitter.com/Buguofficial" target="_blank">
-                    <figure class="tw-logo-icon"></figure>
+                    <figure class="qq-logo-icon"><img src="../assets/images/icon-t-sel@2x.png" /></figure>
                   </a>
                 </section>
               </div>
               <div class="footer-weixin">
                 <section class="hicon">
                   <a href="https://medium.com/@Buguofficial" target="_blank">
-                    <figure class="in-logo-icon"></figure>
+                    <figure class="qq-logo-icon"><img src="../assets/images/icon-medium-sel@2x.png" /></figure>
                   </a>
                 </section>
               </div>
               <div class="footer-weixin">
                 <section class="hicon">
                   <a href="https://www.jinse.com/member/254145" target="_blank">
-                    <figure class="weixin-logo-icon"></figure>
+                    <figure class="qq-logo-icon"><img src="../assets/images/icon-jinse-sel@2x.png" /></figure>
                   </a>
                 </section>
               </div>
               <div class="footer-weixin">
                 <section class="hicon">
                   <a href="https://weibo.com/u/7095183069" target="_blank">
-                    <figure class="weibo-logo-icon"></figure>
+                     <figure class="qq-logo-icon"><img src="../assets/images/icon-wb-sel@2x.png" /></figure>
                   </a>
                 </section>
               </div>
