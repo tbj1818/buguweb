@@ -1,41 +1,41 @@
 $(function () {
     // 锚点平滑滚动
-    $('#a01').click(function () {
+    $('#a01, #a001').click(function () {
         $(this).parent().addClass('active').siblings().removeClass('active');
         $('html,body').animate({
             scrollTop: $('.a01').offset().top + -300 + "px"
         }, 800);
         return false;
     });
-    $('#a02').click(function () {
+    $('#a02, #a002').click(function () {
         $(this).parent().addClass('active').siblings().removeClass('active');
         $('html,body').animate({
             scrollTop: $('.a02').offset().top + -110 + "px"
         }, 800);
         return false;
     });
-    $('#a03').click(function () {
+    $('#a03, #a003').click(function () {
         $(this).parent().addClass('active').siblings().removeClass('active');
         $('html,body').animate({
             scrollTop: $('.a03').offset().top + -110 + "px"
         }, 800);
         return false;
     });
-    $('#a04').click(function () {
+    $('#a04, #a004').click(function () {
         $(this).parent().addClass('active').siblings().removeClass('active');
         $('html,body').animate({
             scrollTop: $('.a04').offset().top + -110 + "px"
         }, 800);
         return false;
     });
-    $('#a05').click(function () {
+    $('#a05, #a005').click(function () {
         $(this).parent().addClass('active').siblings().removeClass('active');
         $('html,body').animate({
             scrollTop: $('.a05').offset().top + -110 + "px"
         }, 800);
         return false;
     });
-    $('#a00').click(function () {
+    $('#a00, #a000').click(function () {
         $(this).parent().addClass('active').siblings().removeClass('active');
         $('html,body').animate({
             scrollTop: $('.a00').offset().top + -250 + "px"

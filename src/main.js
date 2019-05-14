@@ -4,7 +4,7 @@ import router from './router'
 
 
 import './assets/css/bootstrap.min.css'
-import './assets/css/animations.css'
+// import './assets/css/animations.css'
 import './assets/js/bootstrap.min'
 import './assets/css/demo.css'
 import './assets/js/public'

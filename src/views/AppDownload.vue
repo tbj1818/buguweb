@@ -20,13 +20,13 @@
                         <router-link to="/">发展路线</router-link>
                     </li>
                     <li role="presentation">
-                        <router-link to="/">创始团队</router-link>
+                        <router-link to="/">团队</router-link>
                     </li>
                     <li role="presentation" class="load">
-                        <router-link to="/">新闻报道</router-link>
+                        <router-link to="/">新闻</router-link>
                     </li>
                     <li role="presentation" class="active load">
-                        <router-link to="/appdownload">APP下载</router-link>
+                        <router-link to="/app">APP下载</router-link>
                     </li>
                     <li role="presentation" class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -41,7 +41,7 @@
                 </ul>
             </div>
         </div>
-        <section class="container blockMarT">
+        <section class="container blockMarT" style="margin-top:50px">
             <div class="row animatedParent">
                 <div class="col-md-6">
 
@@ -60,14 +60,14 @@
                     </section>
                 </div>
                 <div class="col-md-6">
-                    <img width="100%" class="earthpic" src="../assets/images/earthpic.png" alt="img" />
+                    <img width="100%" class="earthpic" src="../assets/images/phoneimg.png" alt="img" />
                 </div>
             </div>
         </section>
         <section class="col-md-12 appBtn">
-            <p style="margin-left:2.6%"  @click="opentip()">ios下载安装提示<span class="glyphicon glyphicon-chevron-right"></span></p>
             <button type="button" class="btn btn-primary"><a href="itms-services://?action=download-manifest&url=https://bb.eqka.com/app/ios/manifest.plist" target="_blank">ios下载</a></button>
             <button type="button" class="btn btn-android"><a href="http://imgcdn.bb.eqka.com/bugu-pro.apk">Android下载</a></button>
+             <p style="margin:20px 0 0 2.6%;color:#A1EFB7"  @click="opentip()">ios下载安装提示<span class="glyphicon glyphicon-chevron-right"></span></p>
         </section>
 
         <div class="opentip"><div class="clseico" @click="closebtn()"><img src="../assets/images/icon-guanbi@2x.png" alt="closebtn"></div><div class="bluttext">因ios系统限制，安装后首次打开会提示“不受信任的企业和开发者”，为了能正常使用，请按下面步骤设置信任。</div><h1 style="margin:0 auto">下载安装后，在 ＞＞通用＞＞设备管理中找到“Shaa...”＞＞点击信任 “ Shaa... ”</h1><img src="../assets/images/img-xinren@2x.png" alt="iphone提示"><h1 style="text-align:center">布谷公众号：布谷精灵</h1><a href="itms-services://?action=download-manifest&amp;url=https://bb.eqka.com/app/ios/manifest.plist" target="_blank" class="downloadBtn">下载安装</a></div>
@@ -106,7 +106,7 @@ export default {
 .appBtn{display:none}
     @media (max-width:768px) {
         .appBtn{display:block}
-        .animatedParent h4.media-heading{font-size:42px; text-align:left}
+        .animatedParent h4.media-heading{font-size:42px; text-align:left;margin:0}
         .nav_bg,
         .pcqrcode,
         .contactUsBg {
@@ -120,7 +120,7 @@ export default {
         }
 
         .logo {
-            width: 80%
+            width: 80%;margin-bottom:0
         }
 
         .logo img {
@@ -129,16 +129,16 @@ export default {
         }
 
         .logo_nav {
-            margin: 0;
+            margin: 0 10px;
             left: 0
         }
-
+        .lineW{margin-bottom:10px}
         .col-md-6 {
             text-align: center
         }
 
         .blockMarT {
-               margin: 50px auto 0 !important;padding:0;height:auto
+               margin:10px auto 0 !important;padding:0;height:auto
         }
     }
 </style>

@@ -3,22 +3,12 @@ html {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    font-family: PingFang SC,
-        NotoSansHans-Regular,
-        AvenirNext-Regular,
-        "proxima-nova",
-        "Hiragino Sans GB",
-        "Microsoft YaHei",
-        "WenQuanYi Micro Hei",
-        "Open Sans",
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
+    font: 14px/1 robotoregular, Open Sans, PingFang SC, Hiragino Sans GB, Heiti SC, Microsoft YaHei, WenQuanYi Micro Hei, monospace, serif;
 }
 
 body {
     overflow-x: hidden;
-    background: url(../images/bgbg.png) no-repeat center 0;
+    background: url(../images/bgbg.jpg) no-repeat center 0;
     margin: 0 auto;
     padding-top: 90px;
     color: #FFF
@@ -41,13 +31,31 @@ a:hover {
 .logo_nav {
     position: fixed;
     background-size: cover;
-    margin: 0 auto 0 -550px;
+    margin: 0 auto 0 -585px;
     z-index: 999999;
     top: 20px;
     left: 50%
 }
 
-s .dropdown-menu>li>a {
+@media (min-width:768px) {
+    .logo_nav {
+        margin: 0 auto 0 -375px;
+    }
+}
+
+@media (min-width:992px) {
+    .logo_nav {
+        margin: 0 auto 0 -485px;
+    }
+}
+
+@media (min-width:1200px) {
+    .logo_nav {
+        margin: 0 auto 0 -585px;
+    }
+}
+
+.dropdown-menu>li>a {
     color: #FFF;
 }
 
@@ -138,7 +146,6 @@ ul,
 li {
     list-style: none
 }
-
 
 .am-thumbnails {
     margin: 0;
@@ -253,22 +260,26 @@ li {
 .dropdown-menu {
     width: 100%;
     min-width: 100%;
-    background: #768CE7
+    background:none;border:0;
+        box-shadow: 0 0 0 rgba(0,0,0,.1);
 }
 
+
 .dropdown-menu li {
-    width: 100%; cursor: pointer;
+    width: 100%;
+    cursor: pointer;
     text-align: center
 }
 
 /* 板块上间距 */
-
 .blockMarT {
-    margin:250px auto 0;
-    height: 600px; padding: 100px 0;
+    margin: 230px auto 0;
+    height: 600px;
+    padding: 100px 0;
 }
+
 .blockMarTop {
-    margin:100px auto 0;
+    margin: 100px auto 0;
 }
 
 .media:first-child {
@@ -277,17 +288,17 @@ li {
 
 .col-lg-4,
 .col-md-4,
-.col-xs-4
-{
-    padding-left: 0;padding-right:40px;
+.col-xs-4 {
+    padding-left: 0;
+    padding-right: 40px;
 }
+
 /* .col-lg-4:last-child,
 .col-md-4:last-child,
 .col-xs-4:last-child
 {
   
 } */
-
 .media {
     margin: 60px 0;
     overflow: hidden;
@@ -332,7 +343,7 @@ li {
     padding: 10px 25px 0 0;
     margin: 10px auto;
     color: #A1EFB7;
-    font-size: 1.8rem;
+    font-size: 18px;
     display: inline-block;
 }
 
@@ -353,9 +364,7 @@ li {
     /* 使用css3的transform来实现 */
 }
 
-
 /* slider  qiehuan */
-
 #content {
     position: relative;
     margin: 50px auto;
@@ -366,11 +375,9 @@ li {
     width: 100%
 }
 
-
 /********************************
  * generic als elements styling
  ********************************/
-
 .als-container {
     position: relative;
     width: 100%;
@@ -403,12 +410,10 @@ li {
     clear: both;
 }
 
-
 /**************************
  * specific als elements
  * styling for #lista1
  **************************/
-
 #lista1 {
     margin: 60px auto 80px auto;
 }
@@ -441,7 +446,6 @@ li {
     right: 100px;
 }
 
-
 .textgray {
     color: #8D8D8D;
     font-size: 1.6rem
@@ -454,7 +458,7 @@ li {
 
 .pricing-box-green {
     background: url(../images/teambg.png) no-repeat;
-    border-radius:4px;
+    border-radius: 4px;
     position: relative;
     background-size: 100%;
 }
@@ -462,7 +466,6 @@ li {
 .pricing-box-green:hover .peopletext {
     display: block;
 }
-
 
 .pricing-box-green .pricing-top,
 .pricing-box-blue .pricing-top,
@@ -535,6 +538,7 @@ li {
     width: 80%;
     margin: 10px auto;
     text-align: center;
+    opacity: .5;
     font-size: 14px;
     line-height: 30px;
     color: #FFF
@@ -544,7 +548,7 @@ li {
     width: 70%;
     height: 50px;
     line-height: 50px;
-    margin:0 auto 10px;
+    margin: 0 auto 10px;
     text-align: center;
     font-size: 14px;
     color: #FFF;
@@ -629,9 +633,7 @@ li {
     border-color: #dd624e;
 }
 
-
 /* contactUsBg */
-
 .contactUsBg {
     background: #1B1856;
     padding: 30px 0;
@@ -666,9 +668,7 @@ li {
     cursor: pointer;
 }
 
-
 /* nav  mobile */
-
 .menu-icon {
     position: absolute;
     top: 10px;
@@ -694,9 +694,7 @@ li {
     border-bottom: 1px solid #2b2b2b;
 }
 
-
 /*返回顶部*/
-
 .w-button-round,
 .w-button-square {
     position: relative;
@@ -774,9 +772,7 @@ li {
     animation: rotating .8s linear 0s infinite
 }
 
-
 /* slider  切换 */
-
 .B_inner p {
     text-align: left;
     color: #ABABAB
@@ -786,9 +782,7 @@ li {
     text-decoration: none
 }
 
-
 /* phone banner */
-
 .phone_banner {
     width: 100%;
     position: relative;
@@ -816,9 +810,7 @@ li {
     line-height: 1.8rem
 }
 
-
 /* 低版本浏览器提示 */
-
 .browser-happy {
     position: fixed;
     left: 0;
@@ -851,17 +843,17 @@ li {
     margin-top: 30px;
 }
 
-
 /*打造*/
 .animatedParent h4.media-heading {
-    font-size:58px;
+    font-size: 58px;
     line-height: 70px;
     margin-bottom: 30px
 }
 
 .animatedParent p.text {
     font-size: 14px;
-    line-height: 30px;opacity: .7;
+    line-height: 30px;
+    opacity: .7;
 }
 
 .lineW {
@@ -874,7 +866,6 @@ li {
 .lineR {
     width: 40px;
     height: 2px;
-
     background: rgba(241, 134, 132, 1);
     margin-bottom: 30px
 }
@@ -902,7 +893,7 @@ li {
 .fourlist li {
     width: 100%;
     font-size: 20px;
-    margin-top:20px;
+    margin-top: 20px;
     height: 60px;
     padding: 15px 0 0 30px;
     background: rgba(59, 70, 130, 1);
@@ -912,19 +903,24 @@ li {
 
 .fourlist li:hover {
     background: rgba(122, 136, 239, 1);
-        transform: scale(1.1, 1.1);
-        cursor: pointer;
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 .badgepic img {
     width: 30px;
 }
-.wpic{display: none}
-.fourlist li:hover .wpic {
-   display: inline-block;
+
+.wpic {
+    display: none
 }
+
+.fourlist li:hover .wpic {
+    display: inline-block;
+}
+
 .fourlist li:hover .ypic {
-   display: none
+    display: none
 }
 
 /*生态*/
@@ -943,7 +939,7 @@ li {
 
 /*发展线路*/
 .linepic {
-    width: 110%;
+    width: 100%;
     position: relative;
 }
 
@@ -956,13 +952,13 @@ li {
     margin: 0 auto;
     position: absolute;
     top: -38px;
-    left: 5%;
+    left: 2.5%;
 }
 
 .timeLine ul li {
-    width: 140px;
+    width: 200px;
     float: left;
-    margin: 0 110px 0 0;
+    margin: 0 25px 0 0;
     height: 200px;
     background: url(../images/img-quan-def.png) no-repeat center 0;
     position: relative;
@@ -970,7 +966,6 @@ li {
 
 .timeLine ul li:hover {
     background: url(../images/img-quan-sus.png) no-repeat center 0;
-
 }
 
 .timeLine ul li .bottext {
@@ -980,7 +975,8 @@ li {
 }
 
 .timeLine ul li h1 {
-    font-size: 24px
+    font-size: 24px;
+    text-align: right
 }
 
 .timeLine ul li p {
@@ -991,21 +987,21 @@ li {
     width: 90%;
     margin: 0 auto;
     position: absolute;
-    bottom: 41px;
-    left: 18%;
+    bottom: 33px;
+    left: 15%;
 }
 
 .timeLine2 ul li {
-    width: 140px;
+    width: 200px;
     float: left;
-    margin: 0 120px 0 0;
+    margin: 0 30px 0 0;
     height: 200px;
     background: url(../images/img-quan-def2.png) no-repeat center 0;
     position: relative
 }
 
 .timeLine2 ul li:hover {
-    background: url(../images/img-quan-sus2.png);
+    background: url(../images/img-quan-sus2.png) no-repeat center 0;
 }
 
 .timeLine2 ul li .bottext {
@@ -1015,22 +1011,26 @@ li {
 }
 
 .timeLine2 ul li h1 {
-    font-size: 24px
+    font-size: 24px;
+    text-align: left
 }
 
 .timeLine2 ul li p {
     font-size: 14px
 }
 
-
 /*团队*/
-.peoplethree .pricing-box-green {margin-right: 40px}
+.peoplethree .pricing-box-green {
+    margin-right: 40px;
+    box-shadow: 5px 5px 10px rgba(16, 0, 50, 0.4);
+}
+
 .peopletext {
     width: 100%;
     height: 100%;
     padding-top: 60px;
     display: none;
-    border-radius:4px;
+    border-radius: 4px;
     position: absolute;
     left: 0;
     top: 0;
@@ -1045,7 +1045,8 @@ li {
 }
 
 .peopletext p.textgray {
-    width: 80%;
+    width: 90%;
+    opacity: .5;
     margin: 10px auto;
     text-align: left;
     font-size: 14px;
@@ -1053,7 +1054,10 @@ li {
     color: #FFF
 }
 
-.peopletext img{margin:  0 auto;}
+.peopletext img {
+    margin: 0 auto;
+}
+
 .peopletext h2 {
     width: 70%;
     height: 50px;
@@ -1061,39 +1065,82 @@ li {
     margin: 10px auto;
     text-align: center;
     font-size: 14px;
-    border-top:rgba(255, 255, 255, .4) solid 1px;
+    border-top: rgba(255, 255, 255, .4) solid 1px;
     color: #FFF;
+}
+
+.peopletext2 {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    display: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.peopletext2 h6 {
+    text-align: center;
+    font-size: 22px;
+    color: #FFF;
+    margin: 0 auto
+}
+
+.peopletext2 p.textgray {
+    width: 90%;
+    opacity: .5;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFF
+}
+
+.peopletext2 img {
+    margin: 0 auto;
 }
 
 /*新闻报道*/
 .newspic {
     width: 100%;
     height: 280px;
-    border: rgb(49, 44, 141) 1px solid;
     position: relative;
-    border-radius:4px;
-
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(16, 0, 50, 0.4);
 }
 
 .newstitle {
     width: 100%;
-    padding: 20px 30px; margin: 20px 0;
+    padding: 20px 30px;
+    margin: 20px 0;
     background: #F2F2F5;
-    color: #999999; font-size: 14px;
+    color: #999999;
+    font-size: 14px;
 }
 
 .newspic a {
     color: #fff
 }
-.modal{z-index: 9999999999;}
+
+.modal {
+    z-index: 9999999999;
+}
+
 .newspic img {
     width: 100%;
     height: 100%;
-    border-radius:4px;
+    border-radius: 4px;
 }
 
-.newspic:hover .peopletext {
+.newspic:hover .peopletext,
+.newspic:hover .peopletext2 {
     display: block
+}
+
+.newspic:hover .bottomText {
+    display: none
 }
 
 .newspic .bottomText {
@@ -1111,31 +1158,32 @@ li {
 
 .newspic .bottomText p {
     font-size: 14px;
+    opacity: .7;
     margin: 0 0 0 10px;
     line-height: 32px
 }
 
 .newspichover {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .newspichover h6 {
     text-align: left;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .bottomtime {
     position: absolute;
-    bottom: 10px;
-    width: 80%;
-    left: 10%
+    bottom: 5px;
+    width: 90%;
+    left: 5%
 }
 
 .appload {
     width: 130px;
-        background: #FFF;
-        padding: 5px;
+    background: #FFF;
+    padding: 5px;
 }
 
 .appload img {
@@ -1169,13 +1217,17 @@ li {
     text-align: left;
 }
 
+.nonestyle li a {
+    color: #FFF;
+    cursor: pointer;
+}
 
 .weixin-logo-icon {
     background-repeat: no-repeat;
-    background-image: url("../images/icon-wx@2x.png");
+    background-image: url("../images/icon-jscj.png");
     background-size: 26px 26px;
-    height:26px;
-    width:26px;
+    height: 26px;
+    width: 26px;
     cursor: pointer;
     margin: 0;
     -webkit-transition: all .5s ease-in;
@@ -1188,8 +1240,8 @@ li {
     background-repeat: no-repeat;
     background-image: url("../images/icon-wb@2x.png");
     background-size: 26px 26px;
-    height:26px;
-    width:26px;
+    height: 26px;
+    width: 26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1201,10 +1253,10 @@ li {
 
 .qq-logo-icon {
     background-repeat: no-repeat;
-    background-image: url("../images/icon-qq@2x.png");
+    background-image: url("../images/icon-db.png");
     background-size: 26px 26px;
-     height:26px;
-     width:26px;
+    height: 26px;
+    width: 26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1218,8 +1270,8 @@ li {
     background-repeat: no-repeat;
     background-image: url("../images/icon-fb@2x.png");
     background-size: 26px 26px;
-     height:26px;
-     width:26px;
+    height: 26px;
+    width: 26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1233,8 +1285,8 @@ li {
     background-repeat: no-repeat;
     background-image: url("../images/icon-t@2x.png");
     background-size: 26px 26px;
-     height:26px;
-     width:26px;
+    height: 26px;
+    width: 26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1248,8 +1300,8 @@ li {
     background-repeat: no-repeat;
     background-image: url("../images/icon-youtube@2x.png");
     background-size: 26px 26px;
-     height:26px;
-     width:26px;
+    height: 26px;
+    width: 26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1261,10 +1313,10 @@ li {
 
 .in-logo-icon {
     background-repeat: no-repeat;
-    background-image: url("../images/icon-in@2x.png");
+    background-image: url("../images/icon-m.png");
     background-size: 26px 26px;
-     height:26px;
-     width:26px;
+    height: 26px;
+    width: 26px;
     opacity: .8;
     cursor: pointer;
     margin: 0;
@@ -1279,7 +1331,7 @@ li {
     background-repeat: no-repeat;
     border: #fff solid 2px;
     border-radius: 10px;
-    background:#FFF url("../images/qrcodeweb.jpg");
+    background: #FFF url("../images/qrcodeweb.jpg");
     background-size: 160px 160px;
     height: 160px;
     width: 160px
@@ -1296,7 +1348,7 @@ li {
 .footer-weixin {
     float: left;
     position: relative;
-    margin-right: 10px
+    margin-right: 20px
 }
 
 .footer-weixin .popover.top>.arrow {
@@ -1347,17 +1399,21 @@ li {
     width: 100%;
     margin: 0 auto 30px
 }
-.appBtn a{color:#FFF}
+
+.appBtn a {
+    color: #FFF
+}
+
 .appBtn .btn {
     width: 45%;
     padding: 15px 0;
-    font-size:18px;
+    font-size: 18px;
     margin: 0 2.5%
 }
 
 .appBtn .btn.btn-primary {
     background: #5856D0;
-    border-color:0;
+    border-color: 0;
     box-shadow: 0px 0px 24px 0px rgba(16, 0, 50, 0.6);
     border-radius: 4px;
 }
@@ -1369,34 +1425,65 @@ li {
     border-radius: 4px;
 }
 
-
 /*new*/
-.newscontent{width: 100%; background: #FFF;
+.newscontent {
+    width: 100%;
+    background: #FFF;
 }
-.newscontent img{width: 100%;}
+
+.newscontent img {
+    width: 100%;
+}
 
 .newscontent .cont {
-    width:80%; margin:20px auto;padding: 30px 0;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px 0;
     background: #FFF
 }
-.newscontent h1{width: 100%; text-align: left; color: #000}
-.newscontent h6{width: 100%; text-align: left; line-height: 40px; color: #999}
-.newscontent .newstext {color: #000; line-height: 32px;
-    width: 100%; text-align: left
+
+.newscontent h1 {
+    width: 100%;
+    text-align: left;
+    color: #000
+}
+
+.newscontent h6 {
+    width: 100%;
+    text-align: left;
+    line-height: 40px;
+    color: #999
+}
+
+.newscontent .newstext {
+    color: #000;
+    line-height: 32px;
+    width: 100%;
+    text-align: left
 }
 
 .newsgzhh {
     width: 100%;
-    height: 120px;padding: 20px; margin-top: 50px;
+    height: 120px;
+    padding: 20px;
+    margin-top: 50px;
     background: #F2F2F5
 }
-.newsgzhh  img{width:70px; float: left; margin-right: 20px}
+
+.newsgzhh img {
+    width: 70px;
+    float: left;
+    margin-right: 20px
+}
+
 .newsgzhh h1 {
     font-size: 18px;
     margin-top: 10px;
 }
-.newsgzhh  p{font-size: 14px;}
 
+.newsgzhh p {
+    font-size: 14px;
+}
 
 .opentip {
     width: 40%;
@@ -1511,8 +1598,11 @@ li {
         transform: translateZ(0)
     }
 }
-
 @media screen and (max-width:968px) {
+    .earthpic {
+        animation: auto
+    }
+
     .opentip {
         width: 90%;
         position: absolute;
@@ -1697,28 +1787,13 @@ li {
     }
 }
 
-/* 动画 */
-/* 
-.contactUs:hover,
-.atcontact:hover {
-    -webkit-transform: scale(1.1);
-    -webkit-box-shadow: 0px 0px 30px #ccc;
-    -moz-transform: scale(0.8);
-    -moz-box-shadow: 0px 0px 30px #ccc;
-    -o-transform: scale(0.8);
-    -o-box-shadow: 0px 0px 30px #ccc;
-} */
-
-
 /* 响应式 */
-
 @media screen and (min-width:640px) {
     .earthpic {
         width: 500px;
         animation: heart 1.3s ease-in-out 2.7s infinite alternate;
     }
 
-    /* .logo_nav{margin-left: -486px} */
     .B_rounded {
         width: 48%;
         float: left
@@ -1803,9 +1878,7 @@ li {
     }
 }
 
-@media (min-width:768px) {
-
-    /* 焦点图 */
+/* @media (min-width:768px) {
     .carousel-caption {
         top: 25%
     }
@@ -1858,7 +1931,7 @@ li {
     .comitBtn {
         width: 30%
     }
-}
+} */
 
 @media (max-width:1000px) {
     .jzh_bg {
@@ -1871,7 +1944,40 @@ li {
     }
 }
 
+.phoneversion {
+    display: none
+}
+
 @media (max-width:768px) {
+
+     .logo, .a03, .linepic{
+         display: none
+     }
+
+     .blockMarT {
+         height: auto;padding:20px 10px;
+     }
+
+     body {
+         background: url(../images/bgbg.jpg) repeat-y center 0;padding-top: 20px;
+     }
+     .glyphicon{color:#FFF}
+     .hh1{font-size:18px !important; text-align:left !important; line-height:24px !important; text-align:center !important; }
+     .logo_nav{position: relative;margin: 0; left: 0; top: 0;}
+     .nav_bg{width:100%}
+     .fourlist{width:90%}
+     .col-lg-4, .col-md-4, .col-xs-4 {
+        text-align: center;
+        padding:0 40px;
+    }
+    .lineG, .lineB , .lineR, .lineW{margin:0 auto}
+    .lineW{margin-bottom:20px}
+    .animatedParent p.text{text-align:center}
+    .animatedParent h4.media-heading{margin:0 auto; text-align:center}
+    .peoplethree .pricing-box-green{margin:0 auto}
+    .blogo{margin-bottom:30px}
+    .pcenter{text-align: center;}
+.go{margin-top:30px}
     #qcode {
         width: 90%;
         margin: 0 auto;
@@ -1886,7 +1992,6 @@ li {
     /* 手机版导航 */
     .dropdown-menu {
         width: 100%;
-        background: rgba(101, 123, 234, .8);
         color: #FFF
     }
 
@@ -1909,36 +2014,6 @@ li {
 
     .flick-title {
         font-size: 2rem
-    }
-
-    .contactUs {
-        font-size: 1.6rem;
-        color: #333;
-        text-shadow: none;
-        float: none;
-        margin-top: 10px;
-        /* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
-        animation-name: breath;
-        /* 动画名称 */
-        animation-duration: 2s;
-        /* 动画时长3秒 */
-        animation-timing-function: ease-in-out;
-        /* 动画速度曲线：以低速开始和结束 */
-        animation-iteration-count: infinite;
-        /* 播放次数：无限 */
-        /* Safari and Chrome */
-        -webkit-animation-name: breath;
-        /* 动画名称 */
-        -webkit-animation-duration: 2s;
-        /* 动画时长3秒 */
-        -webkit-animation-timing-function: ease-in-out;
-        /* 动画速度曲线：以低速开始和结束 */
-        -webkit-animation-iteration-count: infinite;
-        /* 播放次数：无限 */
-    }
-
-    .nav {
-        display: none
     }
 
 
@@ -1980,8 +2055,8 @@ li {
     }
 
     .nav {
-        background: rgba(17, 124, 235, 0.9);
-        position: absolute;
+        position: relative;
+        display:none;
         top: 0;
         left: 0;
         width: 100%;
@@ -2096,7 +2171,6 @@ li {
         color: #fff
     }
 }
-
 
 @keyframes breath {
     from {

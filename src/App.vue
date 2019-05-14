@@ -10,18 +10,36 @@
   import Footer from './components/footer.vue'
   export default {
     name: 'home',
-    
+    provide() {
+      return {
+        reload: this.reload
+      }
+    },
     data() {
       return {
         visible: false,
-        transitionName: ''
+        isRouterAlive: true,
       }
     },
-    mounted: function () {
-     
+    methods: {
+      reload() {
+        this.isRouterAlive = false;
+        this.$nextTick(function () {
+          this.isRouterAlive = true
+        });
+      },
     },
-    mounted: function () {
+    //监听器
+    watch: {
+      // 方法1
+      '$route'(to, from) { //监听路由是否变化
+        // console.log(999)
+        if (to.path == "/") { //跳转到哪个页面
+          location.reload()
+        }
+      },
     },
+    mounted: function () {},
     components: {
       // Header,
       Footer
