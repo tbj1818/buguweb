@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <Header></Header> -->
     <router-view></router-view>
-    <Footer v-if="!enfooter"></Footer>
+    <Footer v-if="enfooter"></Footer>
     <Footeren v-else></Footeren>
   </div>
 </template>
@@ -40,7 +40,7 @@
         if (to.path == "/") { //跳转到哪个页面
           location.reload()
         }
-        if (to.path == "/en") { //跳转到哪个页面
+        if (to.path == "/zh" || to.path == "/app") { //跳转到哪个页面
           this.enfooter=true;
         }
       },

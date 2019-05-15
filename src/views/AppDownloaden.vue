@@ -11,34 +11,34 @@
                 <!-- nav 导航 -->
                 <ul class="nav nav-pills dropdown-menu" id="navbar" aria-expanded="true">
                     <li role="presentation">
-                        <router-link to="/zh">首页</router-link>
+                        <router-link to="/">Home</router-link>
                     </li>
                     <li role="presentation">
-                        <router-link to="/zh">关于布谷</router-link>
+                        <router-link to="/">About Bugu</router-link>
                     </li>
                     <li role="presentation">
-                        <router-link to="/zh">生态介绍</router-link>
+                        <router-link to="/">Ecology</router-link>
                     </li>
                     <li role="presentation">
-                        <router-link to="/zh">发展路线</router-link>
+                        <router-link to="/">Route</router-link>
                     </li>
                     <li role="presentation">
-                        <router-link to="/zh">团队</router-link>
+                        <router-link to="/">Team</router-link>
                     </li>
                     <li role="presentation" class="load">
-                        <router-link to="/zh">新闻</router-link>
+                        <router-link to="/">News</router-link>
                     </li>
                     <li role="presentation" class="active load">
-                        <router-link to="/app">APP下载</router-link>
+                        <router-link to="/app">APP Download</router-link>
                     </li>
                     <li role="presentation" class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                             aria-expanded="false">
-                            中文简体 <span class="caret"></span>
+                            EN <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu bluebg">
                             <li><a href="/app">中文简体</a></li>
-                            <li><a href="/appen">EN</a></li>
+                            <li><a href="/en">EN</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -52,16 +52,16 @@
             <div class="row animatedParent">
                 <div class="col-md-6">
 
-                    <h4 class="media-heading  a00">
-                        <div class="lineW"></div>专注数字世界<br>
-                        的娱乐与投资平台
+                    <h4 class="media-heading  a00" style="font-size:30px">
+                        <div class="lineW"></div>
+                        Entertainment and investment platform<br> focusing on the digital world
                     </h4>
                     <section class="pcqrcode">
                         <p class="appload" style="margin-top:100px">
                             <img src="../assets/images/qrcodeweb.png" />
                         </p>
                         <p>
-                            <a href="javascript:;" class="atcontact ">扫码下载</a><span
+                            <a href="javascript:;" class="atcontact ">Scan</a><span
                                 class="glyphicon glyphicon-arrow-down"></span>
                         </p>
                     </section>
@@ -74,22 +74,22 @@
         <section class="col-md-12 appBtn">
             <button type="button" class="btn btn-primary"><a
                     href="itms-services://?action=download-manifest&url=https://bb.eqka.com/app/ios/manifest.plist"
-                    target="_blank">ios下载</a></button>
+                    target="_blank">ios Download</a></button>
             <button type="button" class="btn btn-android"><a
-                    href="http://imgcdn.bb.eqka.com/bugu-pro.apk">Android下载</a></button>
-            <p style="margin:20px 0 0 2.6%;color:#A1EFB7" @click="opentip()">ios下载安装提示<span
+                    href="http://imgcdn.bb.eqka.com/bugu-pro.apk">Android Download</a></button>
+            <p style="margin:20px 0 0 2.6%;color:#A1EFB7" @click="opentip()">ios download and installation tips<span
                     class="glyphicon glyphicon-chevron-right"></span></p>
         </section>
 
         <div class="opentip">
             <div class="clseico" @click="closebtn()"><img src="../assets/images/icon-guanbi@2x.png" alt="closebtn">
             </div>
-            <div class="bluttext">因ios系统限制，安装后首次打开会提示“不受信任的企业和开发者”，为了能正常使用，请按下面步骤设置信任。</div>
-            <h1 style="margin:0 auto">下载安装后，在 ＞＞通用＞＞设备管理中找到“Shaa...”＞＞点击信任 “ Shaa... ”</h1><img
+            <div class="bluttext">Due to the limitation of IOS system, the first opening after installation will prompt "untrusted enterprises and developers". For normal use, please follow the following steps to set up trust.</div>
+            <h1 style="margin:0 auto">After downloading and installing，Find "Shaa..." in "Universal" Equipment Management.Click Trust "Shaa..."</h1><img
                 src="../assets/images/img-xinren@2x.png" alt="iphone提示">
             <h1 style="text-align:center">布谷公众号：布谷精灵</h1><a
                 href="itms-services://?action=download-manifest&amp;url=https://bb.eqka.com/app/ios/manifest.plist"
-                target="_blank" class="downloadBtn">下载安装</a>
+                target="_blank" class="downloadBtn">Download and install</a>
         </div>
     </section>
 </template>
@@ -120,7 +120,14 @@
                 this.chromeopen = true
             } else {
                 this.chromeopen = false
-            }
+            };
+            //当点击跳转链接后，回到页面顶部位置
+        $(".w-button-backToTop").click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
         },
         components: {
             // HelloWorld
@@ -136,10 +143,11 @@
         .appBtn {
             display: block
         }
-
+        .appBtn .btn{font-size:16px}
         .animatedParent h4.media-heading {
             font-size: 38px;
             text-align: left;
+            line-height: 50px;
             margin: 0
         }
 

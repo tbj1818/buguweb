@@ -14,12 +14,20 @@ export default new Router({
       component: Home
     },
     {
-      path: '/en',
-      name: 'en',
+      path: '/zh',
+      name: 'zh',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "en" */ './views/Homeen.vue')
+      component: () => import(/* webpackChunkName: "en" */ './views/Homezh.vue')
+    },
+    {
+      path: '/appen',
+      name: 'appen',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "en" */ './views/AppDownloaden.vue')
     },
     {
       path: '/app',

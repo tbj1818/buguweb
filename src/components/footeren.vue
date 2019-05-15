@@ -12,8 +12,8 @@
             <li class="list-group-item" style="font-size:20px; opacity: 1;"><strong>MENU</strong></li>
             <li class="list-group-item"><a href="javascript:;" id="a000">Home</a></li>
             <li class="list-group-item"><a href="javascript:;" id="a001">About Bugu</a></li>
-            <li class="list-group-item"><a href="javascript:;" id="a002">Ecological introduction</a></li>
-            <li class="list-group-item"><a href="javascript:;" id="a003">Development route</a></li>
+            <li class="list-group-item"><a href="javascript:;" id="a002">Ecology</a></li>
+            <li class="list-group-item"><a href="javascript:;" id="a003">Route</a></li>
             <li class="list-group-item"><a href="javascript:;" id="a004">Team</a></li>
             <li class="list-group-item"><a href="javascript:;" id="a005">News</a></li>
             <li class="list-group-item">
@@ -96,3 +96,6 @@
     }
   }
 </script>
+<style scoped>
+.textleft{line-height:28px !important}
+</style>

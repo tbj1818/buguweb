@@ -676,7 +676,7 @@ li {
 .menu-icon {
     position: absolute;
     top: -55px;
-    padding: 15px;
+    padding:20px;
     right: 15px;
     display: none;
     color: #fff;
@@ -969,6 +969,7 @@ li {
     background: url(../images/img-quan-def.png) no-repeat center 0;
     position: relative;
 }
+.timeLine p.text { text-align: right}
 
 .timeLine ul li:hover {
     background: url(../images/img-quan-sus.png) no-repeat center 0;
@@ -1006,7 +1007,9 @@ li {
     background: url(../images/img-quan-def2.png) no-repeat center 0;
     position: relative
 }
-
+.timeLine2  p.text {
+    text-align: left
+}
 .timeLine2 ul li:hover {
     background: url(../images/img-quan-sus2.png) no-repeat center 0;
 }
@@ -1465,6 +1468,7 @@ li {
     text-align: center;
     margin-bottom: 300px
 }
+.marauto{margin: 0 auto 30px}
 
 /* 动画 */
 @-webkit-keyframes Updown {
