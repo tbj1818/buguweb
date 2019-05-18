@@ -20,10 +20,10 @@
             <li role="presentation" class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                 aria-expanded="false">
-                EN <span class="caret"></span>
+                简体中文 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu bluebg">
-                <li><a href="/zh">中文简体</a></li>
+                <li><a href="/zh">简体中文</a></li>
                 <li><a href="/">EN</a></li>
               </ul>
             </li>
@@ -543,4 +543,7 @@
   }
   .animatedParent h4.media-heading{font-size:32px}
   .animatedParent p.text{line-height: 26px}
+  @media (max-width:768px) {
+  .fourlist li{font-size: 14px}
+  }
 </style>

@@ -34,11 +34,11 @@
                     <li role="presentation" class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                             aria-expanded="false">
-                            EN <span class="caret"></span>
+                            简体中文 <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu bluebg">
-                            <li><a href="/app">中文简体</a></li>
-                            <li><a href="/en">EN</a></li>
+                            <li><a href="/app">简体中文</a></li>
+                            <li><a href="/appen">EN</a></li>
                         </ul>
                     </li>
                 </ul>
